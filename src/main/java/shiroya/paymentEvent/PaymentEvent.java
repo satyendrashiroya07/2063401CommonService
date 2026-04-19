@@ -1,18 +1,19 @@
-package shiroya.orderEvent;
+package shiroya.paymentEvent;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class OrderEvent {
+public class PaymentEvent {
     private String orderId;
+    private String status;
     private String userId;
     private String productId;
     private int quantity;
-    private double amount;
-    private String paymentType;
     private String email;
-    private String status;
 }
